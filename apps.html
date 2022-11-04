@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Application and Product Development</title>
+        <script id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflS50iB-/www-widgetapi.js" async=""></script>
+        <script src="https://www.youtube.com/player_api"></script>
+        <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+        <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
+        <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+        <link rel="stylesheet" href="css/service.css" />
+    </head>
+    <body>
+        <header class="header d-lg-flex align-items-center" data-page="servicess" data-page-parent="services">
+            <div class="container d-flex align-items-center flex-wrap flex-lg-nowrap">
+                <a class="logo header_logo d-inline-flex align-items-center" href="index.html">
+                    <span class="logo_icon">
+                        <img src="svg/logo.png" alt="AARDEE" />
+                    </span>
+                    <!--<span class="logo_text h5">AARDEE</span>-->
+                </a>
+                <nav class="header_nav collapse" id="headerMenu">
+                    <ul class="header_nav-list">
+                        <!--<li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-flex align-items-center justify-content-between"
+                                href="index.html"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#homeMenu"
+                                data-trigger="dropdown"
+                                data-main-link="true"
+                                aria-expanded="true"
+                                aria-controls="homeMenu"
+                                data-page="home"
+                                data-page-parent="home"
+                            >
+                                <span class="nav-item_text">
+                                    Home
+                                    <i class="icon-circle icon"></i>
+                                </span>
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                            <div class="dropdown-menu collapse show" id="homeMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item" data-main="true">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="home"
+                                            data-page-parent="home"
+                                            href="index.html"
+                                            data-main="true"
+                                        >
+                                            Home 1
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="home2" data-page-parent="home" href="index2.html">
+                                            Home 2
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>-->
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="index.html" data-page="home" data-single="true">
+                                <span class="nav-item_text">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-flex align-items-center justify-content-between"
+                                href="about.html"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#aboutMenu"
+                                data-trigger="dropdown"
+                                data-page-parent="about"
+                                data-main-link="true"
+                                aria-expanded="false"
+                                aria-controls="aboutMenu"
+                                data-page="about"
+                            >
+                                <span class="nav-item_text">
+                                    About
+                                    <i class="icon-circle icon"></i>
+                                </span>
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="aboutMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item" data-main="true">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="about"
+                                            data-page-parent="about"
+                                            href="about.html"
+                                            data-main="true"
+                                        >
+                                            About Us
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="mission.html"
+                                        >
+                                            Mission & Vision
+                                        </a>
+                                    </li>
+                                    <!--<li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="service.html"
+                                        >
+                                            Clients
+                                        </a>
+                                    </li>-->
+                                </ul>
+                            </div>
+                        </li>
+
+
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-flex align-items-center justify-content-between"
+                                href="services.html"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#servicesMenu"
+                                data-trigger="dropdown"
+                                data-page-parent="services"
+                                data-main-link="true"
+                                aria-expanded="false"
+                                aria-controls="servicesMenu"
+                                data-page="services"
+                            >
+                                <span class="nav-item_text">
+                                    Services
+                                    <i class="icon-circle icon"></i>
+                                </span>
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="servicesMenu">
+                                <ul class="dropdown-list">
+                                    <!--<li class="list-item" data-main="true">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="services"
+                                            data-page-parent="services"
+                                            href="services.html"
+                                            data-main="true"
+                                        >
+                                            All Services
+                                        </a>
+                                    </li>-->
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="apps.html"
+                                        >
+                                            Application and Product Development
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="consulting.html"
+                                        >
+                                            Consultancy Services
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="digitalmarketing.html"
+                                        >
+                                            Digital Marketing Services
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="erp.html"
+                                        >
+                                            ERP Integration Services
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="datamigration.html"
+                                        >
+                                            Data Migration Services
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="datawarehousing.html"
+                                        >
+                                            Data Warehousing Services
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="businessintelligence.html"
+                                        >
+                                            Business Intelligence Services
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="outsourcingservices.html"
+                                        >
+                                            Outsourcing Services
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="cloud.html"
+                                        >
+                                            Cloud Computing Services
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="qatesting.html"
+                                        >
+                                            QA and Testing
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!--<li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="prices.html" data-page="prices" data-single="true">
+                                <span class="nav-item_text">Prices</span>
+                            </a>
+                        </li>-->
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-flex align-items-center justify-content-between"
+                                href="outsourcing.html"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#pagesMenu"
+                                data-trigger="dropdown"
+                                data-page-parent="pages"
+                                data-main-link="true"
+                                aria-expanded="false"
+                                aria-controls="pagesMenu"
+                            >
+                                <span class="nav-item_text">
+                                    Outsourcing
+                                    <i class="icon-circle icon"></i>
+                                </span>
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="pagesMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="appdev" data-page-parent="pages" href="appdev.html">
+                                            Application Development Outsourcing
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="appmaintenance" data-page-parent="pages" href="appmaintenance.html">
+                                            Application Maintenance Outsourcing
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="bpo" data-page-parent="pages" href="bpo.html">
+                                            Business Process Outsourcing
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="globaldelivery" data-page-parent="pages" href="globaldelivery.html">
+                                            Global Delivery Outsourcing
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="testing" data-page-parent="pages" href="testing.html">
+                                            Testing Services
+                                        </a>
+                                    </li>
+                                    <!--<li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="faq" data-page-parent="pages" href="faq.html"> FAQ </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="404" data-page-parent="pages" href="404.html">
+                                            Error Page
+                                        </a>
+                                    </li>-->
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-flex align-items-center justify-content-between"
+                                href="industries.html"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#industriesMenu"
+                                data-trigger="dropdown"
+                                data-page-parent="industries"
+                                data-main-link="true"
+                                aria-expanded="false"
+                                aria-controls="industriesMenu"
+                                data-page="industries"
+                            >
+                                <span class="nav-item_text">
+                                    Industries
+                                    <i class="icon-circle icon"></i>
+                                </span>
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="industriesMenu">
+                                <ul class="dropdown-list">
+                                    <!--<li class="list-item" data-main="true">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="services"
+                                            data-page-parent="services"
+                                            href="services.html"
+                                            data-main="true"
+                                        >
+                                            All Industries
+                                        </a>
+                                    </li>-->
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="finance.html"
+                                        >
+                                            Financial Services
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="government.html"
+                                        >
+                                            Government / Public Sector
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="healthcare.html"
+                                        >
+                                            Healthcare
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="insurance.html"
+                                        >
+                                            Insurance
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="pharma.html"
+                                        >
+                                            Pharmaceutical Industry
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="telecom.html"
+                                        >
+                                            Telecom Industry
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a
+                                            class="dropdown-item nav-item"
+                                            data-page="service"
+                                            data-page-parent="services"
+                                            href="retail.html"
+                                        >
+                                            Retail and Consumer Products
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item nav-link" href="careers.html" data-single="true" data-page="careers">
+                                <span class="nav-item_text">Careers</span>
+                            </a>
+                        </li>
+                        <li class="header_nav-list_btn">
+                            <!--<a class="btn signUpTrigger" href="#">Contact Us</a>-->
+                                <a class="btn" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="header_btn btn btn--neon" href="contact.html">Contact Us</a>
+                <button
+                    class="header_trigger"
+                    id="headerTrigger"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#headerMenu"
+                    aria-controls="headerMenu"
+                    aria-expanded="false"
+                    type="button"
+                >
+                    <i class="icon-arrow-left icon arrow-rotate"></i>
+                </button>
+            </div>
+        </header>
+        <header class="page">
+            <div class="page_animation">
+                <lottie-player
+                    src="lottie/code.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 100%; height: 100%"
+                    loop
+                    autoplay
+                ></lottie-player>
+            </div>
+            <div class="container">
+                <ul class="breadcrumbs d-flex flex-wrap">
+                    <li class="breadcrumbs_item">
+                        <a class="link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="breadcrumbs_item">
+                        <a class="link" href="services.html">Services</a>
+                    </li>
+
+                    <li class="breadcrumbs_item current">
+                        <span id="currentpage">Application and Product Development</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="container d-xl-flex">
+                <div class="page_main">
+                    <h5 class="page_main-subtitle"> </h5>
+                    <div class="wrapper">
+                        <span class="tw-height h2">
+                            <span class="text">Application and Product Development</span>
+                        </span>
+                        <h2 class="page_main-title type" data-text="Application and Product Development">Application and Product Development</h2>
+                    </div>
+                    <div class="page_main-action d-flex flex-column flex-sm-row">
+                        <a class="btn btn--neon" href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+                <div class="page_media">
+                    <img class="page_media-img" src="svg/puzzle.svg" alt="Application and Product Development" />
+                </div>
+            </div>
+        </header>
+        <!-- single service content start -->
+        <main>
+            <!--  about section start  -->
+            <section class="about section">
+                <div class="container d-lg-flex align-items-center">
+                    <div class="media video">
+                        <span class="media_cover cover">
+                            <picture>
+                                <source data-srcset="img/services1/1.jpg" srcset="img/services1/1.jpg" type="image/webp" />
+                                <img class="lazy" data-src="img/services1/1.jpg" src="img/services1/1.jpg" alt="Application and Product Development" />
+                            </picture>
+                        </span>
+                    </div>
+                    <div class="main">
+                        <!--<h3 class="main_title">Application and Product Development</h3>-->
+                        <p class="main_text">
+                            AARDEE believes one of the biggest struggles modern organisations face is adapting to rapid advancements in application and product development and deploying them in real time. These challenges require IT teams to get new technology out the door on a tight schedule and budget. This is why an agile approach to application development makes sense. Many organisations also turn to outsourcing to help speed up the delivery of new solutions. In this environment, organisations are able to take advantage of new technology and best practices while retaining current systems and processes that help make the organisation great.
+                            <br>
+                            AARDEE is capable of designing and developing application services that bring multiple key benefits to a range of enterprises.
+                        </p>
+                        <!--<ul class="main_list">
+                            <li class="main_list-item">
+                                <i class="icon-circle icon"></i>
+                                It is about being able to develop modern, dependable, and expandable software that can be deployed in the shortest time possible; at the same time, it will reduce overall costs and development time, and be supported by top-quality technical expertise and knowledge.
+                            </li>
+                            <li class="main_list-item">
+                                <i class="icon-circle icon"></i>
+                                The proven, step-by-step guide to taking the guesswork out of the Software Development Life Cycle, starting with the translation of company needs into project requirements and ending with post-production customer support.
+                            </li>
+                            <li class="main_list-item">
+                                <i class="icon-circle icon"></i>
+                                Our expert developers will work with you every step of the way, to keep you updated and make sure your project is delivered on time and within budget.
+                            </li>
+                            <li class="main_list-item">
+                                <i class="icon-circle icon"></i>
+                                Our team in IT application development has the experience, expertise and resources to develop products, customized applications, complete systems, and mobile apps all delivered within your expected timeline.
+                            </li>
+                        </ul>-->
+                    </div>
+                </div>
+            </section>
+            <!--  about section end  -->
+            <!--  app section start  -->
+            <section class="app section">
+                <div class="app_shapes">
+                    <div class="group">
+                        <img
+                            class="shape shape--left"
+                            src="svg/bgshape_white2.svg"
+                            alt="Application and Product Development"
+                        />
+                        <img class="shape shape--oval" src="svg/Oval.svg" alt="Application and Product Development" />
+                    </div>
+                    <img class="shape shape--right" src="svg/bgshape_white.svg" alt="Application and Product Development" />
+                    <img class="oval" src="svg/ovalblue.svg" alt="Application and Product Development" />
+                </div>
+                <div class="container d-flex flex-column-reverse flex-lg-row align-items-lg-center">
+                    <div class="app_main">
+                        <div class="app_main-header">
+                            <!--<h4 class="app_main-header_title">AARDEE App platform now is available on a SaaS mode</h4>-->
+                            <p class="app_main-header_text">
+                                AARDEE’s service-oriented framework and internet enabled services include:
+                            </p>
+                        </div>
+                        <ul class="app_main-list d-flex flex-column">
+                            <li class="app_main-list_item">
+                                <span class="number" data-prefix="" data-value=""></span>
+                                <div class="main">
+                                    <h6 class="main_title">Data Warehousing and Business Intelligence technologies</h6>
+                                    <!--<p class="main_text">
+                                        Nullam elementum, magna at suscipit lobortis, dui nibh molestie enim, sed scelerisque ex odio sit
+                                        amet purus. Pellentesque fermentum mauris eget ligula Praesent lacinia ligula nec
+                                    </p>-->
+                                </div>
+                            </li>
+                            <li class="app_main-list_item">
+                                <span class="number" data-prefix="" data-value=""></span>
+                                <div class="main">
+                                    <h6 class="main_title">Client Server solutions</h6>
+                                </div>
+                            </li>
+                            <li class="app_main-list_item">
+                                <span class="number" data-prefix="" data-value=""></span>
+                                <div class="main">
+                                    <h6 class="main_title">Portal Technologies (SAP Enterprise Portal and Microsoft Sharepoint)</h6>
+                                </div>
+                            </li>
+                            <li class="app_main-list_item">
+                                <span class="number" data-prefix="" data-value=""></span>
+                                <div class="main">
+                                    <h6 class="main_title">Databases (Oracle, SQL Server, DB2, Teradata, MySQL)</h6>
+                                </div>
+                            </li>
+                            <li class="app_main-list_item">
+                                <span class="number" data-prefix="" data-value=""></span>
+                                <div class="main">
+                                    <h6 class="main_title">EAI Solutions (SAP, SeeBurger, Tibco, BizTalk, Websphere Suite, EDI/Gentran)</h6>
+                                </div>
+                            </li>
+                            <li class="app_main-list_item">
+                                <span class="number" data-prefix="" data-value=""></span>
+                                <div class="main">
+                                    <h6 class="main_title">Mainframes (CICS, DB2, IMS, IDMS, COBOL and JCL)</h6>
+                                </div>
+                            </li>
+                            <li class="app_main-list_item">
+                                <span class="number" data-prefix="" data-value=""></span>
+                                <div class="main">
+                                    <h6 class="main_title">Web Technologies (Java, J2EE, ASP, .Net, PERL, PHP and Python)</h6>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="app_media">
+                        <picture>
+                            <source data-srcset="img/servicespages/1.png" srcset="img/servicespages/1.png" />
+                            <img class="lazy" data-src="img/servicespages/1.png" src="img/servicespages/1.png" alt="Contact Us" />
+                        </picture>
+                    </div>
+                </div>
+            </section>
+            <!--  app section end  -->
+            <!--  features section start  -->
+            <section class="features">
+                <div class="container d-lg-flex align-items-center">
+                    <div class="features_media">
+                      <picture>
+                          <source data-srcset="img/shakehandsonservices.png" srcset="img/shakehandsonservices.png" />
+                          <img class="lazy" data-src="img/shakehandsonservices.png" src="img/shakehandsonservices.png" alt="Contact Us" />
+                      </picture>
+                    </div>
+                    <div class="features_main">
+                        <h4 class="features_main-title">Get in touch to know more</h4>
+                        <p class="features_main-text">
+                            Contact Us to gain a deeper understanding of our capabilities, resources, innovative processes, and technology solutions.
+                        </p>
+                        <a class="features_main-btn btn btn--white" href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </section>
+            <!--  features section end  -->
+            <section class="join section">
+                <div class="join_media">
+                    <img class="join_media-left lazy" src="svg/joinman.svg" alt="Join Us" />
+                    <div class="group">
+                        <img class="shape lazy" src="svg/bgshape_white2.svg" alt="Join Us" />
+                        <img class="speaker lazy" src="svg/speaker.svg" alt="Join Us" />
+                    </div>
+                </div>
+                <div class="container d-md-flex flex-column align-items-center">
+                    <h3 class="join_header">
+                        Join
+                        <span class="join_header-wrapper">
+                            <span class="number countNum" data-value="100" data-suffix="+" data-separator=",">100</span>
+                            <span class="animatedUnderline"></span>
+                        </span>
+                        growing businesses that AARDEE serves
+                    </h3>
+                    <br>
+                    <!--<ul class="join_list d-flex flex-column flex-md-row justify-content-md-center">
+                        <li class="join_list-item">
+                            <i class="icon-check icon"></i>
+                            No credit card required
+                        </li>
+                        <li class="join_list-item">
+                            <i class="icon-check icon"></i>
+                            14-day free trial
+                        </li>
+                        <li class="join_list-item">
+                            <i class="icon-check icon"></i>
+                            Cancel Anytime
+                        </li>
+                    </ul>-->
+                    <a class="join_btn btn btn--neon" href="contact.html">Contact Us</a>
+                </div>
+            </section>
+            <div class="stripe d-flex align-items-center">
+                <div class="stripe_block d-none d-sm-flex align-items-center">
+                    <span class="stripe_block-icon">
+                        <i class="icon-arrow-left icon"></i>
+                    </span>
+                    <ul class="stripe_block-list d-flex flex-column">
+                        <li>100+ Clients,</li>
+                        <li>50+ Employees,</li>
+                        <li>160+ Projects</li>
+                    </ul>
+                </div>
+                <div class="ticker h3" id="ticker"></div>
+                <!--  ticker content changes here  -->
+                <div class="d-none">
+                    <span class="ticker-item">FRC Manufacturing Tech</span>
+                    <span class="ticker-item">Lightbulb Innovations</span>
+                    <span class="ticker-item">RazorX Payment Solutions</span>
+                    <span class="ticker-item">Radhe Group</span>
+                    <span class="ticker-item">LevelInfy</span>
+                </div>
+                <!--  ticker content changes here  -->
+            </div>
+        </main>
+        <!-- single service content end -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_top">
+                    <a class="logo footer_top-logo d-inline-flex align-items-center" href="index.html">
+                        <span class="logo_icon">
+                            <img src="svg/logo.png" alt="AARDEE" />
+                        </span>
+                    </a>
+                    <ul class="footer_top-nav d-flex flex-wrap">
+                        <li class="footer_top-nav_link">
+                            <a class="link h5" href="about.html">
+                                About
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                        </li>
+                        <li class="footer_top-nav_link">
+                            <a class="link h5" href="services.html">
+                                Services
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                        </li>
+                        <li class="footer_top-nav_link">
+                            <a class="link h5" href="contact.html">
+                                Contact
+                                <i class="icon-arrow-left icon arrow-rotate"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom-contacts d-flex flex-column">
+                        <a class="link" href="mailto:asr@aardeesolutions.com">asr@aardeesolutions.com</a>
+                        <a class="link" href="mailto:rdsolinc@gmail.com">rdsolinc@gmail.com</a>
+                        <a class="link" href="tel:+17326131658">+1732-613-1658</a>
+                    </div>
+                    <div class="footer_bottom-socials">
+                        <ul class="footer_bottom-socials_list socials d-flex flex-wrap">
+                            <li class="socials-item">
+                                <a class="link" href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-facebook icon"></i>
+                                </a>
+                            </li>
+                            <!--<li class="socials-item">
+                                <a class="link" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-instagram icon"></i>
+                                </a>
+                            </li>-->
+                            <!--<li class="socials-item">
+                                <a class="link" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-twitter icon"></i>
+                                </a>
+                            </li>-->
+                            <!--<li class="socials-item">
+                                <a class="link" href="https://soundcloud.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-soundcloud icon"></i>
+                                </a>
+                            </li>-->
+                            <!--<li class="socials-item">
+                                <a class="link" href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-youtube-play icon"></i>
+                                </a>
+                            </li>-->
+                            <li class="socials-item">
+                                <a class="link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-linkedin icon"></i>
+                                </a>
+                            </li>
+                            <!--<li class="socials-item">
+                                <a class="link" href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-whatsapp icon"></i>
+                                </a>
+                            </li>-->
+                            <!--<li class="socials-item">
+                                <a class="link" href="https://snapchat.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-snapchat-ghost icon"></i>
+                                </a>
+                            </li>-->
+                            <!--<li class="socials-item">
+                                <a class="link" href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-tiktok icon"></i>
+                                </a>
+                            </li>-->
+                        </ul>
+                    </div>
+                </div>
+                <p class="footer_copyright">Copyright &copy; <span id="currentYear"></span> AARDEE</p>
+            </div>
+            <a class="footer_scroll" id="scrollToTop" href="#">
+                <i class="icon-arrow-up icon"></i>
+            </a>
+        </footer>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="js/common.min.js"></script>
+        <script src="js/ticker.min.js"></script>
+    </body>
+</html>
