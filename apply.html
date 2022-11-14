@@ -692,7 +692,7 @@ AARDEE Solutions agrees to comply with federal laws including, but not limited t
         var uploadField = document.getElementById("resume");
           uploadField.onchange = function() {
               if(this.files[0].size > 60000){
-                 alert("File is big! Please upload a file that is less than 50 KB");
+                 alert("The file you've selected is large. Please upload a file that is less than 50 KB in size.");
                  this.value = "";
               };
           };
