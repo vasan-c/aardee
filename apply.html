@@ -541,7 +541,8 @@ AARDEE Solutions agrees to comply with federal laws including, but not limited t
                             />
                             <input class="field required" type="text" id="role" name="role" placeholder="Role you're applying for" />
                             <p>Upload your Resume (Recommended File Size: Below 50 KB)</p>
-                            <input class="field required" type="file" id="resume" name="resume" placeholder="Upload your resume" />
+                            <input class="field required" type="file" id="resume" name="resume" placeholder="Upload your resume"
+                            accept=".pdf, .docx, .doc" />
                             <textarea
                                 class="field required"
                                 name="message"
@@ -687,5 +688,14 @@ AARDEE Solutions agrees to comply with federal laws including, but not limited t
         <script src="js/common.min.js"></script>
         <script src="js/ticker.min.js"></script>
         <script src="js/map.min.js"></script>
+        <script>
+        var uploadField = document.getElementById("resume");
+          uploadField.onchange = function() {
+              if(this.files[0].size > 60000){
+                 alert("File is big! Please upload a file that is less than 50 KB");
+                 this.value = "";
+              };
+          };
+        </script>
     </body>
 </html>
